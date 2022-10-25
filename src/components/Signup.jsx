@@ -5,7 +5,7 @@ import Market from "../assets/trade.png";
 
 const Signup = () => {
   return (
-    <div className="signup">
+    <div name="earn" className="signup">
       <div className="container">
         {/* left */}
         <div className="left">

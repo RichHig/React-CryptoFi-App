@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -15,16 +16,24 @@ const Navbar = () => {
         </h1>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-            <a href="/">Home</a>
+            <Link to="home" smooth={true} duration={500}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="/">Featured</a>
+            <Link to="featured" smooth={true} duration={500}>
+              Featured
+            </Link>
           </li>
           <li>
-            <a href="/">Earn</a>
+            <Link to="earn" smooth={true} duration={500}>
+              Earn
+            </Link>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact
+            </Link>
           </li>
         </ul>
         <div className="btn-group">

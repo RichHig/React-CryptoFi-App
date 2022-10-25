@@ -4,7 +4,7 @@ import Market from "../assets/hero-img.png";
 
 const Hero = () => {
   return (
-    <div className="hero">
+    <div name="home" className="hero">
       <div className="container">
         {/* Left Side */}
         <div className="left">
